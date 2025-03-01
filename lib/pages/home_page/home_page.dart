@@ -23,6 +23,10 @@ class HomePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               CategorySet(),
+              Text(
+                'For Sale and Cost',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+              ),
             ],
           ),
         ),
