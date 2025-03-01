@@ -6,7 +6,7 @@ class CategorySet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final products = List.generate(
+    final categories = List.generate(
       4,
       (index) => const CategoryCart(
         title: "New Item",
@@ -20,7 +20,7 @@ class CategorySet extends StatelessWidget {
 
     return Column(
       children: List.generate(
-        (products.length / 2).ceil(), // Adjusted row count
+        (categories.length / 2).ceil(), // Adjusted row count
         (rowIndex) {
           int firstIndex = rowIndex * 2;
           int secondIndex = firstIndex + 1;
@@ -30,10 +30,10 @@ class CategorySet extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                products[firstIndex],
-                if (secondIndex < products.length) ...[
+                categories[firstIndex],
+                if (secondIndex < categories.length) ...[
                   const SizedBox(width: 10),
-                  products[secondIndex],
+                  categories[secondIndex],
                 ],
               ],
             ),
