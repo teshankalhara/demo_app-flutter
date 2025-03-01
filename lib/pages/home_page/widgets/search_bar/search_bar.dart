@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/home_page/widgets/text_input_field.dart';
+import 'package:flutter_app/pages/home_page/widgets/search_bar/text_input_field.dart';
 
 Widget searchBarBox = Padding(
   padding: EdgeInsets.symmetric(vertical: 15),
