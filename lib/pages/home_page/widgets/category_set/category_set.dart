@@ -7,7 +7,7 @@ class CategorySet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final products = List.generate(
-      10,
+      4,
       (index) => const CategoryCart(
         title: "New Item",
         decoration: "Hello, I'm a new item! Please buy me!",
