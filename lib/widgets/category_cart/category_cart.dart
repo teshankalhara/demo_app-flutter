@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ProductCart extends StatelessWidget {
+class CategoryCart extends StatelessWidget {
   final String title;
   final String decoration;
   final Color titleColor;
@@ -8,7 +8,7 @@ class ProductCart extends StatelessWidget {
   final Color productBoxColor;
   final Color smallBoxColor;
 
-  const ProductCart({
+  const CategoryCart({
     super.key,
     required this.title,
     required this.decoration,
