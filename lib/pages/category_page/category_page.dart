@@ -11,7 +11,11 @@ class CategoryPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Categories',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
         ),
         centerTitle: true,
         leading: IconButton(
@@ -26,7 +30,28 @@ class CategoryPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Column(children: [NotificationCard()]),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              NotificationCard(),
+              SizedBox(height: 10),
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+                child: Text(
+                  'All Categories',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 5),
+                child: Divider(color: Colors.black45, thickness: 1),
+              ),
+            ],
+          ),
         ),
       ),
     );
