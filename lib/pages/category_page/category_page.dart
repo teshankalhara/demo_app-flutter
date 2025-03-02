@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/category_item/category_item.dart';
 import 'package:flutter_app/widgets/notification_card/notification_card.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -49,6 +50,16 @@ class CategoryPage extends StatelessWidget {
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 5),
                 child: Divider(color: Colors.black45, thickness: 1),
+              ),
+              SizedBox(height: 10),
+              CategoryItem(
+                title: 'Sample Title',
+                description: 'Sample Description',
+                titleColor: Colors.black,
+                descriptionColor: const Color.fromARGB(255, 53, 53, 53),
+                backgroundColor: const Color.fromARGB(255, 3, 182, 131),
+                borderColor: const Color.fromARGB(255, 15, 3, 130),
+                circleColor: const Color.fromARGB(255, 1, 69, 125),
               ),
             ],
           ),
