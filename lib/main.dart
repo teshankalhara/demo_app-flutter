@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/category_page/category_page.dart';
 import 'package:flutter_app/pages/home_page/home_page.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      //home: HomePage(),
+      home: CategoryPage(),
     );
   }
 }
