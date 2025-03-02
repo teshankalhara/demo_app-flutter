@@ -8,7 +8,7 @@ class NotificationCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 10),
       width: double.infinity,
-      height: 100,
+      height: 120,
       decoration: BoxDecoration(
         // ignore: deprecated_member_use
         color: const Color.fromARGB(115, 193, 193, 193).withOpacity(0.1),
@@ -52,6 +52,7 @@ class NotificationCard extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+          Text("Sped payements with Google Pay"),
         ],
       ),
     );
