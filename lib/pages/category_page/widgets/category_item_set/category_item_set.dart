@@ -7,7 +7,7 @@ class CategoryItemSet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = List.generate(
-      4,
+      6,
       (index) => const CategoryItem(
         title: 'Sample Title',
         description: 'Sample Description',
