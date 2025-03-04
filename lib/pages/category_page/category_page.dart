@@ -1,7 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/category_page/widgets/category_item_set/category_item_set.dart';
+import 'package:flutter_app/pages/category_page/widgets/selected_item/selected_item.dart';
 import 'package:flutter_app/widgets/notification_card/notification_card.dart';
+import 'package:flutter_app/widgets/rating_bar/rating_bar.dart';
 import 'package:flutter_app/widgets/sub_title_bar/sub_title_bar.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -41,6 +43,11 @@ class CategoryPage extends StatelessWidget {
               SizedBox(height: 10),
               CategoryItemSet(),
               SubTitleBar(title: 'Selected Items'),
+              SizedBox(height: 10),
+              SelectedItem(),
+              SizedBox(height: 40),
+              RatingBar(),
+              SizedBox(height: 20),
             ],
           ),
         ),
