@@ -13,9 +13,9 @@ class CategoryItemSet extends StatelessWidget {
         description: 'Sample Description',
         titleColor: Colors.black,
         descriptionColor: Color.fromARGB(255, 53, 53, 53),
-        backgroundColor: Color.fromARGB(255, 3, 182, 131),
-        borderColor: Color.fromARGB(255, 15, 3, 130),
-        circleColor: Color.fromARGB(255, 1, 69, 125),
+        backgroundColor: Color.fromARGB(255, 85, 252, 88),
+        borderColor: Color.fromARGB(255, 255, 2, 2),
+        circleColor: Color.fromARGB(255, 64, 47, 212),
       ),
     );
 
