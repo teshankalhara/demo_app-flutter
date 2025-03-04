@@ -10,7 +10,14 @@ class ProdectDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Prodect Details'),
+        title: Text(
+          'Prodect Details',
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
+        ),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -33,10 +40,8 @@ class ProdectDetailsPage extends StatelessWidget {
                   height: 300,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/prodect.jpg'),
-                      fit: BoxFit.cover,
-                    ),
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Center(
                     child: Icon(
