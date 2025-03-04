@@ -14,19 +14,14 @@ class ProdectDetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Prodect Details',
+          'Product Details',
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w500,
             color: Colors.black,
           ),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+        leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {}),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
