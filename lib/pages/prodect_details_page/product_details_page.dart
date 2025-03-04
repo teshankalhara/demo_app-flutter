@@ -55,6 +55,7 @@ class ProdectDetailsPage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 15),
               SubTitleBar(title: 'Product Information'),
               DescriptionBox(
                 description:
