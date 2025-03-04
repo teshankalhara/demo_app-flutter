@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/prodect_details_page/widgets/price_table.dart';
+import 'package:flutter_app/pages/prodect_details_page/widgets/total_price.dart';
 import 'package:flutter_app/widgets/description_box/description_box.dart';
 import 'package:flutter_app/widgets/notification_card/notification_card.dart';
 import 'package:flutter_app/widgets/price_row/price_row.dart';
@@ -66,6 +67,7 @@ class ProdectDetailsPage extends StatelessWidget {
               ),
               SubTitleBar(title: 'Price List'),
               PriceTable(),
+              TotalPrice(price: 100.0, unit: 'LKR'),
               SizedBox(height: 50),
             ],
           ),
