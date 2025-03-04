@@ -15,7 +15,7 @@ class SubTitleBar extends StatelessWidget {
           child: Text(
             title,
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 22,
               fontWeight: FontWeight.w500,
               color: Colors.black,
             ),
