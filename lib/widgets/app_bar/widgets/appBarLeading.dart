@@ -12,7 +12,10 @@ Widget appBarLeading = Padding(
       color: Colors.blue,
     ),
     child: Center(
-      child: Icon(Icons.add_location, color: Colors.white, size: 35),
+      child: IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.local_grocery_store),
+      ),
     ),
   ),
 );

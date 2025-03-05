@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/prodect_details_page/product_details_page.dart';
 import 'package:flutter_app/widgets/category_cart/category_cart.dart';
 
 class CategorySet extends StatelessWidget {
@@ -24,18 +25,26 @@ class CategorySet extends StatelessWidget {
         (rowIndex) {
           int firstIndex = rowIndex * 2;
           int secondIndex = firstIndex + 1;
-          return Container(
-            margin: const EdgeInsets.only(bottom: 15),
-            padding: const EdgeInsets.only(bottom: 5),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                categories[firstIndex],
-                if (secondIndex < categories.length) ...[
-                  const SizedBox(width: 10),
-                  categories[secondIndex],
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProdectDetailsPage()),
+              );
+            },
+            child: Container(
+              margin: const EdgeInsets.only(bottom: 15),
+              padding: const EdgeInsets.only(bottom: 5),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  categories[firstIndex],
+                  if (secondIndex < categories.length) ...[
+                    const SizedBox(width: 10),
+                    categories[secondIndex],
+                  ],
                 ],
-              ],
+              ),
             ),
           );
         },

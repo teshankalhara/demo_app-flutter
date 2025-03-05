@@ -21,7 +21,12 @@ class ProdectDetailsPage extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {}),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
