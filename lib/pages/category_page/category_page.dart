@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/category_page/widgets/category_item_set/category_item_set.dart';
 import 'package:flutter_app/pages/category_page/widgets/selected_item/selected_item.dart';
@@ -25,9 +24,7 @@ class CategoryPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            if (kDebugMode) {
-              print('Back to home page');
-            }
+            Navigator.pop(context);
           },
         ),
       ),

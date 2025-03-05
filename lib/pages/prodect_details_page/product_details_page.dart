@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/prodect_details_page/widgets/buy_btn.dart';
 import 'package:flutter_app/pages/prodect_details_page/widgets/price_table.dart';
+import 'package:flutter_app/pages/prodect_details_page/widgets/total_price.dart';
 import 'package:flutter_app/widgets/description_box/description_box.dart';
 import 'package:flutter_app/widgets/notification_card/notification_card.dart';
-import 'package:flutter_app/widgets/price_row/price_row.dart';
 import 'package:flutter_app/widgets/sub_title_bar/sub_title_bar.dart';
 
 class ProdectDetailsPage extends StatelessWidget {
@@ -13,7 +14,7 @@ class ProdectDetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Prodect Details',
+          'Product Details',
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w500,
@@ -54,6 +55,7 @@ class ProdectDetailsPage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 15),
               SubTitleBar(title: 'Product Information'),
               DescriptionBox(
                 description:
@@ -66,7 +68,10 @@ class ProdectDetailsPage extends StatelessWidget {
               ),
               SubTitleBar(title: 'Price List'),
               PriceTable(),
-              SizedBox(height: 50),
+              TotalPrice(price: 100.0, unit: 'LKR'),
+              SizedBox(height: 5),
+              BuyBtn(btnBgColor: Colors.black45, btnTextColor: Colors.white),
+              SizedBox(height: 20),
             ],
           ),
         ),
